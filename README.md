@@ -40,7 +40,7 @@ The inputs this action uses are:
 | `functions_directory` | `false` | N/A | The (optional) directory where your Netlify functions are stored |
 | `install_command` | `false` | `npm i` | The (optional) command to install dependencies |
 | `build_command` | `false` | `npm run build` | The (optional) command to build static website |
-| `deploy_alias` | `false` | '' | | (Optional) [Deployed site alias](https://cli.netlify.com/commands/deploy) |
+| `deploy_alias` | `false` | '' | (Optional) [Deployed site alias](https://cli.netlify.com/commands/deploy) |
 
 ## Example
 
