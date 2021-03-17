@@ -22,8 +22,6 @@ else
 	npm i
 fi
 
-eval ${INSTALL_COMMAND:-"npm i"}
-
 # Build project
 eval ${BUILD_COMMAND:-"npm run build"}
 
