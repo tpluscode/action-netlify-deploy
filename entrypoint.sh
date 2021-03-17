@@ -12,6 +12,16 @@ BUILD_COMMAND=$7
 DEPLOY_ALIAS=$8
 
 # Install dependencies
+if [[ -n $INSTALL_COMMAND ]]
+then
+	eval ${INSTALL_COMMAND}
+elif [[ -f yarn.lock ]]
+then
+	yarn
+else
+	npm i
+fi
+
 eval ${INSTALL_COMMAND:-"npm i"}
 
 # Build project
