@@ -14,7 +14,7 @@ DEPLOY_ALIAS=$8
 # Install dependencies
 if [[ -n $INSTALL_COMMAND ]]
 then
-	eval ${INSTALL_COMMAND}
+	eval $INSTALL_COMMAND
 elif [[ -f yarn.lock ]]
 then
 	yarn
